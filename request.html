@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Custom Request | Your Person in Uganda</title><meta name="description" content="Practical local assistance in Uganda, handled personally by Jed Atwine."><link rel="stylesheet" href="styles.css"></head><body>
+<div class="flag"></div><header><div class="wrap nav"><a class="brand" href="index.html"><span class="flag-mark"><i></i><i></i><i></i></span><span>YOUR PERSON<small>IN UGANDA</small></span></a>
+<nav class="nav-links"><a class="" href="index.html">Home</a><a class="" href="accommodation.html">Accommodation</a><a class="" href="paperwork.html">Paperwork</a><a class="" href="errands.html">General Errands</a><a class="" href="property.html">Property</a><a class="" href="about.html">About Jed</a></nav><a class="nav-profile" href="about.html"><img src="assets/jed-atwine.jpg" alt="Jed Atwine"><span>Jed Atwine</span></a></div></header>
+<main>
+<section class="wrap page-intro"><span class="eyebrow">Your request, in your words</span><h1>What do you need<br><span style="color:#b18a00">help with?</span></h1><p>Not every task fits into a service list. Describe what you need and I'll review it, then get back to you on WhatsApp.</p></section>
+<section class="section soft"><div class="wrap"><div class="request-box"><form id="requestForm">
+<div class="field"><label for="category">Which area is this about?</label><select id="category" required><option>Accommodation</option><option>Paperwork</option><option>General Errands</option><option>Property</option><option>Something else</option></select></div>
+<div class="field"><label for="details">Describe what you need</label><textarea id="details" required placeholder="For example: I need someone to visit a property in Entebbe and send me a video update."></textarea><span class="hint">A few clear details will help me understand the task.</span></div>
+<div class="field"><label for="location">Where is the service needed?</label><input id="location" placeholder="e.g. Ntinda, Kampala, Entebbe"></div>
+<div class="field"><label for="budget">Estimated budget (optional)</label><input id="budget" placeholder="e.g. UGX 50,000"></div>
+<div class="field"><label for="customer">Your name</label><input id="customer" placeholder="Your name"></div>
+<div class="field"><label for="contact">Your WhatsApp number</label><input id="contact" type="tel" placeholder="+256..." required></div>
+<button class="btn whatsapp" type="submit">Send request to Jed on WhatsApp ↗</button>
+<p class="hint">This opens WhatsApp with your request filled in. Check the message and press Send in WhatsApp. Your QWERTY keyboard and standard text entry are supported.</p>
+</form></div></div></section>
+<script>
+document.getElementById('requestForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const get=id=>document.getElementById(id).value.trim();
+ const message=`NEW REQUEST — YOUR PERSON IN UGANDA\nCategory: ${get('category')}\nRequest: ${get('details')}\nLocation: ${get('location')||'Not specified'}\nBudget: ${get('budget')||'Not specified'}\nName: ${get('customer')||'Not provided'}\nCustomer WhatsApp: ${get('contact')}`;
+ window.open('https://wa.me/256769396906?text='+encodeURIComponent(message),'_blank','noopener');
+});
+</script>
+</main><footer><div class="wrap"><div class="foot"><div><strong>YOUR PERSON IN UGANDA</strong><p>Your local point of contact for practical help on the ground.</p><p>Operated personally by Jed Atwine.</p></div><div><strong>Talk to Jed</strong><p><a href="https://wa.me/256769396906">WhatsApp: 0769 396 906</a><br><a href="tel:+256769396906">Call: 0769 396 906</a><br><a href="mailto:jedatwine@gmail.com">jedatwine@gmail.com</a></p></div></div>
+<div class="byline">Your Person in Uganda is operated by Jed Atwine and is a DukaFlyer venture. DukaFlyer registration certificate can be provided on request.<br>© 2026 Your Person in Uganda. Government and third-party charges are separate from our service fees.</div></div></footer></body></html>
