@@ -24,6 +24,7 @@ Email: jedatwine@gmail.com
 
 Notes:
 - Prices are suggested service fees from the conversation, not government fees.
+- Each service now shows a Local price and a For internationals price (USD, transport inclusive within Kampala and its suburbs, starting from $20). Review the USD figures before publishing.
 - Review all prices and service descriptions before publishing.
 - The custom request form opens WhatsApp with a prefilled message; the visitor must press Send.
 - Footer identifies this as a DukaFlyer venture and says the registration certificate can be provided on request. Add a certificate link only after choosing and uploading the actual certificate.
